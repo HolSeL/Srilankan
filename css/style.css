@@ -1,0 +1,55 @@
+/*----------- Lightbox ----------*/
+
+/* hide the lightbox initially*/
+.lightbox { 
+	position: absolute;
+	height: 160%;
+	width: 100%;
+	left: -100%;
+	top: 0px; 
+}
+
+/* when thumb is clicked, make target visible by changing its position.
+set the z-index higher so that is on the top of page contents.
+ */				
+.lightbox:target { 
+	left: 0px;
+	z-index: 8;	
+}
+
+/* set z-index higest, so that the content is on top of lightbox.	 */		
+.lightbox:target div { 
+	/*background: #FFFFFF;*/ 
+	position: absolute; 
+	/*left: 50%; 
+	top: 50%; 
+	float: right;*/
+    z-index: 9; 	
+}
+
+/* set hight and width of the content div. */
+.lightbox-content { 
+	/*height: 427px;
+	width: 640px;
+	margin-left: -320px; 
+	margin-top: -614px; */
+    
+    height: auto;
+	padding:10px 10px 30px 10px ;
+    
+}
+
+/* add some margin for the caption */
+.lightbox-content span{    
+    margin-top:-20px;    
+	display:block;
+}
+
+/* the close link should be 100% on the screen.	 */
+.close{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: #000000;
+	opacity: 0.8;		
+}

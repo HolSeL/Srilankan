@@ -1,0 +1,6 @@
+Add scrolling widget, which allows to select any image in gallery
+Change the Zoom In/Out options in this way: user clicks the plus or minus sign, the magnifying glass icon appears,
+   and then, user can click on the picture to Zoom it In/Out.
+Fix the "Real size" and "Fit screen" options, sometimes they work not correctly
+Add option, which allows to preload all images
+Add option to change opacity and color of overlay
